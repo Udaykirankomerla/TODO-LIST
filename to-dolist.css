@@ -1,0 +1,139 @@
+.todocontainer {
+    background-image: url("https://res.cloudinary.com/dxeuqr4dh/image/upload/v1696165680/pexels-tara-winstead-6690924_gdxu1j.jpg");
+    background-size: cover;
+    height: 683px;
+    padding-top: 10px;
+    border-radius: 15px;
+}
+
+.todo {
+    margin: 60px 500px;
+    background-color: white;
+    width: 500px;
+    height: 550px;
+    border-radius: 20px;
+}
+
+.h1color {
+    background-color: rgb(102, 126, 255);
+    border-radius: 19px 19px 0px 0px;
+    padding: 1px 0px 0px;
+    height: 90px;
+    border: 2px solid white;
+}
+
+.Todo-list {
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.anime {
+    height: 4px;
+    background-color: white;
+    margin-left: 186px;
+    border-radius: 2px;
+    animation-name: underline;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+@keyframes underline {
+    0% {
+        width: 5px;
+    }
+
+    100% {
+        width: 130px;
+    }
+}
+
+.iobutton {
+    position: relative;
+    margin-top: 20px;
+    left: 60.5px;
+}
+
+.iobutton input {
+    margin-top: 13px;
+    height: 32px;
+    width: 300px;
+    outline: none;
+    font-size:16px;
+    font-family:system-ui;
+    background-color:#e8f5ff;
+    border-radius:7px;
+    border:2px solid #bdcdda;
+}
+.addbtn{
+    padding:12px ;
+    width:80px;
+    transform:translateY(-2px);
+    background-color:#ffcc81;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    font-weight:600;
+    font-size:18px;
+}
+.addbtn:active{
+    transform:scale(0.9,0.9);
+    transition-duration:0.010s;
+}
+ul li{
+    list-style:none;
+    font-size:17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position:relative;
+}
+ul li:hover{
+    overflow:auto
+}
+ul li::before{
+    content: '';
+    position:absolute;
+    left:17px;
+    top:7px;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(https://res.cloudinary.com/dxeuqr4dh/image/upload/v1696250806/stroke-round-geometric-shape-vector_53876-175080_zscrfm.avif);
+    background-size: cover;
+    background-position: center;
+} 
+ul li.check{
+    color:rgb(248, 95, 95);
+    text-decoration: line-through;
+}
+ul li.check::before{
+    position:absolute;
+    background-image: url(https://res.cloudinary.com/dxeuqr4dh/image/upload/v1696252065/download_lcdi4m.png);
+    background-size:cover;
+    height:20px;
+    width:20px;
+    top:11px;
+    left:20px;
+}
+ul li span{
+    position: absolute;
+    right:40px;
+    top:1px;
+    width:40px;
+    height: 40px;
+    font-size: 16px;
+    color:black;
+    line-height: 40px;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ul li span:hover{
+    color:white;
+    background-color:black;
+    position:absolute;
+    left:372px;
+    width:70px;  
+}
